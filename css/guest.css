@@ -1,32 +1,48 @@
-.cover-container {
-	display: inline-block;
-	width: 60%;
+html {
 	height: 100%;
-	background: url(../img/cover.jpg) center center no-repeat;
-	background-size: 100% auto;
+	margin: 0;
+	padding: 0;
 }
 
-.cover {
-	display: inline-block;
-	width: 100%;
+body {
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.3);
+	margin: 0;
+	padding: 0;
+}
+
+
+.cover-container {
+	display: inline-block;
+	width: 55%;
+	height: 100%;
+	background: url(../img/cover2.jpg) center left no-repeat;
+	background-size: auto 100%;
+	float: left;
+}
+
+/*Info Block*/
+
+.info-container {
+	display: inline-block;
+	width: 45%;
+	height: 100%;
+	float: right;
 	text-align: center;
 }
 
 .cover-title {
-	font-family: "Muller-Medium";
+	font-family: "BebasNeue-Book";
 	font-size: 48px;
-	color: white;
+	color: #414141;
 	text-transform: uppercase;
 	display: block;
-	margin-top: 125px;
+	margin-top: 80px;
 }
 
 .cover-desc {
-	font-family: "Muller-Regular";
-	font-size: 21px;
-	color: rgba(255, 255, 255, 0.8);
+	font-family: "StudioScriptCTT";
+	font-size: 26px;
+	color: rgba(66, 66, 66, 1);
 	display: block;
 	margin-top: 20px;
 }
@@ -39,15 +55,14 @@
 /*Text Block*/
 
 .text-container {
-	display: inline-block;
-	width: 40%;
-	height: 100%;
+	display: block;
+	width: 80%;
 	margin: 0% 10%;
 	text-align: center;
 }
 
 .text {
-	font-family: "Muller-Regular";
+	font-family: "segoeui";
 	font-size: 15px;
 	color: #757575;
 	padding: 80px 0px;
@@ -62,7 +77,6 @@
 	width: 100%;
 	text-align: center;
 	bottom: 0;
-	position: fixed;
 	margin-bottom: 60px;
 }
 
@@ -72,50 +86,40 @@
 
 .answ-yes {
 	display: inline-block;
-	margin-left: 120px;
-	margin-right: 120px; 
+	margin-left: 40px;
+	margin-right: 40px; 
 }
 
 .answ-no {
 	display: inline-block;
 }
 
-.icon-not-sure {
-	font-size: 30px;
-	color: #757575;
-}
-
-
-.icon-yes {
-	font-size: 30px;
-	color: #757575;
-}
-
-
-.icon-no {
-	font-size: 30px;
-	color: #757575;
-}
-
-
-.icon-not-sure:hover {
-	color: #FFB300;
-}
-
-
-.icon-yes:hover {
-	color: #66BB6A;
-}
-
-
-.icon-no:hover {
-	color: #F44336;
-}
-
-
 .button-container .btn {
+	font-family: "segoeui";
+	font-size: 15px;
+	color: #757575;
 	background-color: white;
-	border: none;
+	border: 1px solid #757575;
+	border-radius: 2px;
+	width: 120px;
+	height: 40px;
+}
+
+.answ-not-sure:hover {
+	color: #FFB300;
+	border: 1px solid #FFB300;
+}
+
+
+.answ-yes:hover {
+	color: #66BB6A;
+	border: 1px solid #66BB6A;
+}
+
+
+.answ-no:hover {
+	color: #F44336;
+	border: 1px solid #F44336;
 }
 
 .btn:focus {
@@ -131,45 +135,11 @@
 
 }
 
-@media screen and (max-width: 800px) {
-
-		.answ-not-sure {
-		display: block;
-		margin: 10px 40px;
-	}
-
-		.answ-yes {
-		display: block;
-		margin: 20px 40px;
-	}
-
-		.answ-no {
-		display: block;
-		margin: 10px 40px;
-	}
-
-	.icon-not-sure {
-		font-size: 29px;
-	}
-
-	.button-container {
-		position: inherit;
-	}
-}
-
 @media screen and (max-width: 768px) {
 
 
 }
 
-
-@media screen and (max-width: 600px) {
-
-	.cover-container {
-		background: url(../img/cover.jpg) no-repeat;
-		background-size: auto 400px;
-	}
-}
 
 
 
@@ -188,4 +158,19 @@
 @font-face {
 	font-family: "Muller-Medium";
 	src: url(../font/Muller-Medium.otf);
+}
+
+@font-face {
+	font-family: "BebasNeue-Book";
+	src: url(../font/BebasNeue-Book.otf);
+}
+
+@font-face {
+	font-family: "StudioScriptCTT";
+	src: url(../font/StudioScriptCTT.ttf);
+}
+
+@font-face {
+	font-family: "segoeui";
+	src: url(../font/segoeui.ttf);
 }
