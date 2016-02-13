@@ -104,6 +104,7 @@ body {
 	border-radius: 40px;
 	width: 120px;
 	height: 40px;
+	padding: 0;
 }
 
 .answ-not-sure:hover {
@@ -153,9 +154,15 @@ body {
 	}
 
 	.button-container {
-		display: block;
-	    transform: translateX(185%);
+		display: inline-block;
 	    margin-bottom: 30px;
+	    width: 40%;
+	    padding: 0% 11.429%;
+
+	}
+
+	.button-container .btn {
+		width: 100%; 
 	}
 }
 
@@ -167,7 +174,27 @@ body {
 
 @media screen and (max-width: 900px) {
 
+	.cover-container {
+		width: 100%;
+		height: 400px;
+		background: url(../img/cover2.1.jpg) center center no-repeat;
+		background-size: auto 400px;
+		float: none;
+	}
 
+	.info-container {
+		width: 100%;
+		height: auto;
+		float: none;
+	}
+
+	.button-container {
+		display: inline-block;
+		width: 100%;
+	    padding: 0% 25%;
+		text-align: center;
+		position: inherit;
+	}
 }
 
 @media screen and (max-width: 768px) {
